@@ -1,0 +1,26 @@
+PROBLEMA | OZAMI DUQUE RODRÍGUEZ
+
+Se busca crear una aplicación en el que los clientes soliciten un producto que contiene un Mouse
+y un Teclado de marca Acer o HP, a elección de ellos, y que tengan las posibilidad de 
+buscar información del elemento, agregar información y quitar información de su carrito,
+los cuales son procesos pesados, debido al uso de la DB. También, se desea implementar una
+función en el que la persona pueda ver como esta un producto, si el producto está seleccionado
+podra agregarlo y/o quitarlo de su carrito, pero no lo podra hacer si ya lo pidio, en cambio,
+la posibilidad de buscar información siempre estará disponible, en cualquier estado.
+
+- Abstract Factory
+Con este patrón logre producir familias de objetos relacionados sin especificar su clase. De esta forma
+esto relacionando las marcas e igualmente esta la posibilidad de llamar a un producto en especifico.
+
+- Proxy.
+Con este logre hacer como un cache, el plan era evitar la demora en consultas a la BD, por eso
+la app primero accede al proxy y si no se a hecho una consulta igual, se redigire para
+interacturar con la BD. En caso de que ya haya resultados de una consulta previa igual, entonces omitimos
+el volver a hacer una consulta a la BD y enviamos los datos en el cache, en el proxy.
+
+- State.
+Con este se logró hacer que dependiendo en la fase que este el producto se pudieran hacer ciertas funciones.
+Como en este caso hay dos fases, una Disponible, que se refiere que está en la tienda y hay disponibilidad para
+comprarlo, y la otra es Fase de Envio, que se refiere a que el producto está apartado para ser empacado y luego
+enviado. Entonces teniendo en cuenta esto, la persona puede buscar siempre el elemento sin pensar el estado.
+Si esta disponible lo puede agregar o quitar el carrito, pero si esta en fase de envio, no puede agregar o quitarlo.

@@ -1,0 +1,9 @@
+PROBLEMA | OZAMI DUQUE RODRÍGUEZ
+
+Se busca crear una aplicación en el que los clientes soliciten un producto que contiene un Mouse
+y un Teclado de marca Acer o HP, a elección de ellos, y que tengan las posibilidad de 
+buscar información del elemento, agregar información y quitar información de su carrito,
+los cuales son procesos pesados, debido al uso de la DB. También, se desea implementar una
+función en el que la persona pueda ver como esta un producto, si el producto está seleccionado
+podra agregarlo y/o quitarlo de su carrito, pero no lo podra hacer si ya lo pidio, en cambio,
+la posibilidad de buscar información siempre estará disponible, en cualquier estado.
